@@ -14,25 +14,23 @@ export const about = {
 }
 
 export const projects = [
+  // Add future projects by copying this shape and adding one object to the array.
   {
-    slug: 'studio-mark-identity', number: '01', title: 'Studio Mark Identity', category: 'Brand / Visual Identity', year: '2025',
-    description: '', challenge: '', approach: '', result: '',
-    thumbnail: '', heroImage: '',
-    images: ['', '', ''],
+    id: 'studio-mark-identity', slug: 'studio-mark-identity', number: '01', title: 'Studio Mark Identity', category: 'Brand / Visual Identity', year: '2025',
+    description: '', image: '', tags: ['AI Prototyping', 'Design System', 'Figma'], link: '/work/studio-mark-identity',
+    challenge: '', approach: '', result: '', thumbnail: '', heroImage: '', images: ['', '', ''],
     info: { role: '', services: '', year: '2025' },
   },
   {
-    slug: 'commerce-reimagined', number: '02', title: 'Commerce Reimagined', category: 'Product / E-commerce', year: '2025',
-    description: '', challenge: '', approach: '', result: '',
-    thumbnail: '', heroImage: '',
-    images: ['', '', ''],
+    id: 'commerce-reimagined', slug: 'commerce-reimagined', number: '02', title: 'Commerce Reimagined', category: 'Product / E-commerce', year: '2025',
+    description: '', image: '', tags: ['AI Prototyping', 'UX Strategy', 'Figma'], link: '/work/commerce-reimagined',
+    challenge: '', approach: '', result: '', thumbnail: '', heroImage: '', images: ['', '', ''],
     info: { role: '', services: '', year: '2025' },
   },
   {
-    slug: 'field-companion-app', number: '03', title: 'Field Companion App', category: 'Product / Mobile', year: '2024',
-    description: '', challenge: '', approach: '', result: '',
-    thumbnail: '', heroImage: '',
-    images: ['', '', ''],
+    id: 'field-companion-app', slug: 'field-companion-app', number: '03', title: 'Field Companion App', category: 'Product / Mobile', year: '2024',
+    description: '', image: '', tags: ['AI Prototyping', 'Interaction', 'Design System'], link: '/work/field-companion-app',
+    challenge: '', approach: '', result: '', thumbnail: '', heroImage: '', images: ['', '', ''],
     info: { role: '', services: '', year: '2024' },
   },
 ]

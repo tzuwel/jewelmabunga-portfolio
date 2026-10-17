@@ -21,10 +21,16 @@ export default function Home() {
         </div>
         <div className="project-list">
           {projects.map((project) => (
-            <Link href={`/work/${project.slug}`} className="project-item reveal" key={project.slug}>
+            <Link href={project.link} className="project-item reveal" key={project.id}>
               <p className="project-number">{project.number}</p>
-              <ImagePlaceholder src={project.thumbnail || project.heroImage} alt={`${project.title} project placeholder`} label={project.category} />
-              <div className="project-caption"><h3>{project.title}</h3><span>{project.category} · {project.year}</span><MoveUpRight aria-hidden="true" /></div>
+              <ImagePlaceholder src={project.image || project.thumbnail || project.heroImage} alt={`${project.title} project thumbnail`} label={project.category} />
+              <div className="project-card-content">
+                <div className="project-caption"><h3>{project.title}</h3><span>{project.category} · {project.year}</span><MoveUpRight aria-hidden="true" /></div>
+                {project.description && <p className="project-description">{project.description}</p>}
+                <ul className="project-tags" aria-label={`${project.title} skills`}>
+                  {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
+                </ul>
+              </div>
             </Link>
           ))}
         </div>
