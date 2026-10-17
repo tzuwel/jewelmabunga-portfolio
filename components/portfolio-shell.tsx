@@ -28,20 +28,6 @@ export function FloatingNav() {
   const [active, setActive] = useState(pathname === '/' ? 'intro' : 'home')
 
   useEffect(() => {
-    const revealItems = document.querySelectorAll('.reveal, .reveal-image')
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible')
-          revealObserver.unobserve(entry.target)
-        }
-      })
-    }, { threshold: 0.12 })
-    revealItems.forEach((item) => revealObserver.observe(item))
-    return () => revealObserver.disconnect()
-  }, [pathname])
-
-  useEffect(() => {
     if (pathname !== '/') {
       setActive('home')
       return
