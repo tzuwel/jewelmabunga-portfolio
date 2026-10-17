@@ -22,7 +22,6 @@ export default function Home() {
         <div className="project-list">
           {projects.map((project) => (
             <Link href={project.link} className="project-item reveal" key={project.id}>
-              <p className="project-number">{project.number}</p>
               <ImagePlaceholder src={project.image || project.thumbnail || project.heroImage} alt={`${project.title} project thumbnail`} label={project.category} />
               <div className="project-card-content">
                 <div className="project-caption"><h3>{project.title}</h3><span>{project.category} · {project.year}</span><MoveUpRight aria-hidden="true" /></div>
