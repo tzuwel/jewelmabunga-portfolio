@@ -9,8 +9,8 @@ export default function Home() {
       <SiteHeader />
       <section id="intro" className="hero">
         <p className="eyebrow">{siteConfig.role}</p>
-        <h1>I TURN IDEAS<br />INTO <em>EXPERIENCES.</em></h1>
-        <p className="hero-copy">Designing clear, thoughtful digital experiences<br className="hidden sm:block" /> with a strong point of view.</p>
+        <h1>I DESIGN WITH<br /><em>AI, INTENTIONALLY.</em></h1>
+        <p className="hero-copy">Human-centered UX, rapid AI prototyping, and modern design systems<br className="hidden sm:block" /> to ship clearer, faster, smarter digital products.</p>
         <Link href="#work" className="scroll-cue">Scroll to explore <span aria-hidden="true">↓</span></Link>
       </section>
 
@@ -27,9 +27,7 @@ export default function Home() {
               <div className="project-card-content">
                 <div className="project-caption"><h3>{project.title}</h3><span>{project.category} · {project.year}</span><MoveUpRight aria-hidden="true" /></div>
                 {project.description && <p className="project-description">{project.description}</p>}
-                <ul className="project-tags" aria-label={`${project.title} skills`}>
-                  {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
-                </ul>
+                <div className="project-ai-workflow"><span>AI workflow</span><p>{project.aiWorkflow}</p></div>
               </div>
             </Link>
           ))}

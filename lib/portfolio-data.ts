@@ -17,19 +17,19 @@ export const projects = [
   // Add future projects by copying this shape and adding one object to the array.
   {
     id: 'studio-mark-identity', slug: 'studio-mark-identity', number: '01', title: 'Studio Mark Identity', category: 'Brand / Visual Identity', year: '2025',
-    description: '', image: '', tags: ['AI Prototyping', 'Design System', 'Figma'], link: '/work/studio-mark-identity',
+    description: '', aiWorkflow: 'Accelerated prototyping and layout ideation using LLMs and v0.', image: '', tags: ['AI Prototyping', 'Design System', 'Figma'], link: '/work/studio-mark-identity',
     challenge: '', approach: '', result: '', thumbnail: '', heroImage: '', images: ['', '', ''],
     info: { role: '', services: '', year: '2025' },
   },
   {
     id: 'commerce-reimagined', slug: 'commerce-reimagined', number: '02', title: 'Commerce Reimagined', category: 'Product / E-commerce', year: '2025',
-    description: '', image: '', tags: ['AI Prototyping', 'UX Strategy', 'Figma'], link: '/work/commerce-reimagined',
+    description: '', aiWorkflow: 'Prompt-to-code iteration to test commerce flows, hierarchy, and interaction direction quickly.', image: '', tags: ['AI Prototyping', 'UX Strategy', 'Figma'], link: '/work/commerce-reimagined',
     challenge: '', approach: '', result: '', thumbnail: '', heroImage: '', images: ['', '', ''],
     info: { role: '', services: '', year: '2025' },
   },
   {
     id: 'field-companion-app', slug: 'field-companion-app', number: '03', title: 'Field Companion App', category: 'Product / Mobile', year: '2024',
-    description: '', image: '', tags: ['AI Prototyping', 'Interaction', 'Design System'], link: '/work/field-companion-app',
+    description: '', aiWorkflow: 'Human-led product thinking paired with rapid AI-assisted prototyping and design-system exploration.', image: '', tags: ['AI Prototyping', 'Interaction', 'Design System'], link: '/work/field-companion-app',
     challenge: '', approach: '', result: '', thumbnail: '', heroImage: '', images: ['', '', ''],
     info: { role: '', services: '', year: '2024' },
   },
